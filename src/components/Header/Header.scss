@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    height: 60px;
+
+    &__title{
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+    
+    &__menu-icon {
+        cursor: pointer;
+    }
+
+    &__icons{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    &__icon{
+        margin-right: 15px;
+    }
+}
+
+

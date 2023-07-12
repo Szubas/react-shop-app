@@ -1,0 +1,62 @@
+.menu{
+    width: 200px;
+    height: fit-content;
+    border: 1px solid var(--primary-color);
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: fixed;
+    background-color: white;
+    top: 80px;
+    padding: 10px;
+
+    &__item{
+        border-left: 2px solid var(--primary-color);
+        width: 80%;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 500;   
+        text-align: left;
+        margin-bottom: 10px;
+        transition: 1s;
+        cursor: pointer;
+        
+        &:hover{
+            color: var(--red);
+            border-left-color: var(--red);
+            transition: 1s;
+        }
+    }
+
+}
+
+//Menu animation
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
