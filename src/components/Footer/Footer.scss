@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+    &__socials{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        padding: 50px 100px;
+        width: fit-content;
+
+        &__item{
+            margin-right: 50px;
+        }
+    }
+
+    &__space {
+        border-bottom: 1px solid black;
+    }
+
+    &__copyright {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        &__socials{
+            padding: 50px;
+        }
+    }
+}

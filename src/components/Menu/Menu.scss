@@ -1,7 +1,6 @@
 .menu{
     width: 200px;
     height: fit-content;
-    border: 1px solid var(--primary-color);
     transition: 2s;
     display: flex;
     flex-direction: column;
@@ -12,6 +11,10 @@
     background-color: white;
     top: 80px;
     padding: 10px;
+    -webkit-box-shadow: 13px 12px 26px -12px var(--primary-color);
+    -moz-box-shadow: 13px 12px 26px -12px var(--primary-color);
+    box-shadow: 13px 12px 26px -12px var(--primary-color);
+    border-bottom-right-radius: 20px;
 
     &__item{
         border-left: 2px solid var(--primary-color);
@@ -22,7 +25,8 @@
         text-align: left;
         margin-bottom: 10px;
         transition: 1s;
-        cursor: pointer;
+        text-decoration: none;
+        color: var(--secondary-color);
         
         &:hover{
             color: var(--red);
@@ -32,6 +36,7 @@
     }
 
 }
+
 
 //Menu animation
 .scale-up-center {
