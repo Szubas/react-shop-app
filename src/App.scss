@@ -1,5 +1,9 @@
-.App {
+.app {
   text-align: center;
+
+  &__content{
+    min-height: 90vh;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -17,4 +21,13 @@
   .App-link {
     color: #61dafb;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .app{
+    &__content{
+      min-height: 70vh;
+    }
+  }
+
 }

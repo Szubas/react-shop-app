@@ -4,14 +4,15 @@
         align-items: center;
         justify-content: center;
         background-size: cover;
-        height: 1000px;
+        min-height: 1000px;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .slider{
         &__item{
-            height: 500px;
+            min-height: 700px;
         }
     }
 }

@@ -1,0 +1,42 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    min-width: 200px;    
+    height: auto;
+    text-align: left;
+    padding: 10px;
+    
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__sale {
+        color: var(--red);
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        position: absolute;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__price {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        height: auto;
+        &_img {
+            height: 600px;
+        }
+    }
+}

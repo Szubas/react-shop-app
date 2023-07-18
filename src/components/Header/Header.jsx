@@ -24,7 +24,7 @@ export const Header = () => {
             {isOpenMenu && <Menu onItemClick ={() => { closeMenu() }} />}
             <div className='header'>
                 <div onClick={() => { menuOnClickListener() }} className='header__menu-icon'><MenuIcon /></div>
-                <Link to='/' className='header__title'>Clothes shop</Link>
+                <Link to='/' className='header__title'>CLOTHES SHOP</Link>
                 <div className='header__icons'>
                     <Link to='./search' className='header__icon'><SearchIcon /></Link>
                     <Link to='./account' className='header__icon'><PersonIcon /></Link>

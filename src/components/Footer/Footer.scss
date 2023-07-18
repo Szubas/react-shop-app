@@ -2,15 +2,27 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
 
-    &__socials{
+    &__text {
         display: flex;
-        align-items: start;
-        justify-content: start;
+        padding-left: 100px;
+        padding-top: 50px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    &__socials {
+        display: flex;
         padding: 50px 100px;
         width: fit-content;
 
-        &__item{
+        &__item {
             margin-right: 50px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border-radius: 100%;
+            display: flex;
+            padding: 10px;
         }
     }
 
@@ -26,8 +38,9 @@
 
 @media only screen and (max-width: 600px) {
     .footer {
-        &__socials{
-            padding: 50px;
+        &__socials, &__text{
+            padding: 20px 30px;
+            margin-left: 0;
         }
     }
 }

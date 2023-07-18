@@ -7,6 +7,9 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 export const Footer = () => {
     return(
         <div className='footer'>
+            <div className='footer__text'>
+                Find us on:
+            </div>
             <div className='footer__socials'>
                 <div className='footer__socials__item'><FacebookIcon /></div>
                 <div className='footer__socials__item'><TwitterIcon /></div>

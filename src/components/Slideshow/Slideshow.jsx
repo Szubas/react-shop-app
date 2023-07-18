@@ -27,7 +27,7 @@ export const Slideshow = () => {
             <Slide>
                 {slideImages.map((slideImage, index)=> (
                     <div key={index}>
-                        <div className='slider__item' style={{ 'backgroundImage': `url(${slideImage.url})` }}></div>
+                        <img className='slider__item' src={slideImage.url} alt={slideImage.caption} />
                     </div>
                 ))} 
             </Slide>
