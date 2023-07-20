@@ -1,0 +1,17 @@
+.womens {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: center;
+
+    &__card {
+        max-width: 400px;
+        min-width: 200px;
+
+        &__link {
+            text-decoration: none;
+            color: var(--secondary-color);
+        }
+    }
+}

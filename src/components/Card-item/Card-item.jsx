@@ -5,7 +5,7 @@ export const CardItem = (props) => {
 
     return (
         <div className="card">
-            <img src={item.img} alt={item.title} className="card__img" />
+            <img src={item.image} alt={item.title} className="card__img" />
             {
                 item.sale && <div className="card__sale">{item.salepercent}</div>
             }
