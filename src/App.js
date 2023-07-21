@@ -10,6 +10,7 @@ import { Womens } from './pages/Womens/Womens';
 import { Sales } from './pages/Sales';
 import { Newest } from './pages/Newest';
 import { Cart } from './pages/Cart';
+import { SignIn } from './pages/Sign-in';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/details" element={<Details />} />
           <Route path="/newest" element={<Newest />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/account" element={<SignIn />} />
         </Routes>
       </div>
       <Footer />
