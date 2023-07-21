@@ -1,67 +1,67 @@
-.menu{
-    width: 200px;
-    height: fit-content;
-    transition: 2s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    position: fixed;
-    background-color: white;
-    top: 80px;
-    padding: 10px;
-    -webkit-box-shadow: 13px 12px 26px -12px var(--primary-color);
-    -moz-box-shadow: 13px 12px 26px -12px var(--primary-color);
-    box-shadow: 13px 12px 26px -12px var(--primary-color);
-    border-bottom-right-radius: 20px;
+.menu {
+  width: 200px;
+  height: fit-content;
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: fixed;
+  background-color: white;
+  top: 80px;
+  padding: 10px;
+  -webkit-box-shadow: 13px 12px 26px -12px var(--primary-color);
+  -moz-box-shadow: 13px 12px 26px -12px var(--primary-color);
+  box-shadow: 13px 12px 26px -12px var(--primary-color);
+  border-bottom-right-radius: 20px;
 
-    &__item{
-        border-left: 2px solid var(--primary-color);
-        width: 80%;
-        padding: 10px;
-        font-size: 20px;
-        font-weight: 500;   
-        text-align: left;
-        margin-bottom: 10px;
-        transition: 1s;
-        text-decoration: none;
-        color: var(--secondary-color);
-        
-        &:hover{
-            color: var(--red);
-            border-left-color: var(--red);
-            transition: 1s;
-        }
+  &__item {
+    border-left: 2px solid var(--primary-color);
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 10px;
+    transition: 1s;
+    text-decoration: none;
+    color: var(--secondary-color);
+
+    &__sale {
+      color: var(--red)
     }
+  }
 
 }
 
 
 //Menu animation
 .scale-up-center {
-	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    transform: scale(0.5);
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    transform: scale(0.5);
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }

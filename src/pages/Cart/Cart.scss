@@ -1,0 +1,124 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+
+    &__title {
+        font-size: 40px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+
+        &__list {
+            width: 70%;
+        }
+
+        &__summary {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            padding: 70px;
+            padding-right: 150px;
+            font-size: 18px;
+            font-weight: 400;
+            background-color: var(--secondary-bg);
+            min-height: 500px;
+
+            &__title {
+                font-size: 35px;
+                font-weight: 600;
+                margin: 0;
+                margin-bottom: 50px;
+            }
+
+            &__textarea {
+                margin-bottom: 30px;
+
+                &__left {
+                    width: fit-content;
+                    float: left;
+                    margin: 0;
+                }
+
+                &__right {
+                    width: fit-content;
+                    float: right;
+                    margin: 0;
+                }
+            }
+
+            &__btn {
+                border: 0;
+                color: white;
+                background-color: black;
+                font-size: 20px;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+
+                &:hover {
+                    border: 1px solid var(--primary-bg);
+                }
+            }
+        }
+    }
+
+    &__empty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__info {
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+
+        &__btn {
+            font-size: 20px;
+            padding: 10px;
+            width: 200px;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                border: 1px solid var(--secondary-bg);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .cart {
+        margin: 0;
+
+        &__text {
+            padding: 20px;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+
+            &__list {
+                width: 100%;
+            }
+
+            &__summary {
+                width: auto;
+                font-size: 15px;
+                padding: 30px;
+                min-height: auto;
+            }
+        }
+    }
+}

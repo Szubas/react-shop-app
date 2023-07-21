@@ -9,6 +9,7 @@ import { Details } from './pages/Details/Details';
 import { Womens } from './pages/Womens/Womens';
 import { Sales } from './pages/Sales';
 import { Newest } from './pages/Newest';
+import { Cart } from './pages/Cart';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/sale" element={<Sales />} />
           <Route path="/details" element={<Details />} />
           <Route path="/newest" element={<Newest />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </div>
       <Footer />

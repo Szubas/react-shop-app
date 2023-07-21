@@ -11,10 +11,22 @@
         font-weight: 500;
         text-decoration: none;
         color: var(--secondary-color);
+        transition: 3s;
 
         &:hover{
             color: var(--red);
             transition: 1s;
+        }
+
+        &__sale{
+            color: var(--red);
+            text-decoration: none;
+            transition: 1s;
+
+            &:hover{
+                font-size: 25px;
+                transition: 1s;
+            }
         }
     }
 }

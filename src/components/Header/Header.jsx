@@ -13,7 +13,7 @@ export const Header = () => {
     const menuOnClickListener = () => {
         isOpenMenu ? setIsOpenMenu(false) : setIsOpenMenu(true)
     }
-    
+
     const closeMenu = () => {
         setIsOpenMenu(false)
     }
@@ -21,7 +21,7 @@ export const Header = () => {
 
     return (
         <>
-            {isOpenMenu && <Menu onItemClick ={() => { closeMenu() }} />}
+            {isOpenMenu && <Menu onItemClick={() => { closeMenu() }} />}
             <div className='header'>
                 <div onClick={() => { menuOnClickListener() }} className='header__menu-icon'><MenuIcon /></div>
                 <Link to='/' className='header__title'>CLOTHES SHOP</Link>
