@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './Header.scss'
 import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Menu } from '../Menu';
@@ -26,7 +25,6 @@ export const Header = () => {
                 <div onClick={() => { menuOnClickListener() }} className='header__menu-icon'><MenuIcon /></div>
                 <Link to='/' className='header__title'>CLOTHES SHOP</Link>
                 <div className='header__icons'>
-                    <Link to='./search' className='header__icon'><SearchIcon /></Link>
                     <Link to='./cart' className='header__icon'><ShoppingCartIcon /></Link>
                     <Link to='./account' className='header__icon'><PersonIcon /></Link>
                 </div>
