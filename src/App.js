@@ -11,6 +11,7 @@ import { Sales } from './pages/Sales';
 import { Newest } from './pages/Newest';
 import { Cart } from './pages/Cart';
 import { SignIn } from './pages/Sign-in';
+import { SignUp } from './pages/Sign-up';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/newest" element={<Newest />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/account" element={<SignIn />} />
+          <Route path="/register" element={<SignUp />} />
         </Routes>
       </div>
       <Footer />

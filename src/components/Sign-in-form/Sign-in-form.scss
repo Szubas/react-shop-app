@@ -1,0 +1,123 @@
+.sign-in-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 100px;
+    padding-left: 200px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        &__input {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 300px;
+            height: 50px;
+            padding-left: 10px;
+            margin: 10px 0;
+            font-size: 15px;
+            outline: none;
+            border-radius: 0;
+        }
+
+        &__btn {
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            margin-top: 20px;
+
+            &:hover {
+                border: 1px solid white;
+            }
+        }
+    }
+}
+
+.sign-up-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: var(--secondary-bg);
+    min-height: 50vh;
+    padding: 100px;
+    padding-right: 200px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__info {
+        font-size: 13px;
+        color: var(--primary-color);
+        text-align: left;
+    }
+
+    &__label {
+        margin: 15px 0;
+
+        &__icon {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        &__text {
+            color: var(--secondary-color);
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 500;
+        border: 1px solid black;
+        padding: 10px;
+        margin-top: 20px;
+        text-decoration: none;
+        width: 300px;
+        color: var(--secondary-color);
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sign-in-form {
+        width: auto;
+        padding: 100px;
+        padding-top: 20px;
+    }
+
+    .sign-up-label {
+        width: auto;
+        min-height: auto;
+        padding: 100px;
+    }
+}

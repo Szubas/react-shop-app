@@ -1,10 +1,11 @@
-.sign-in-form {
+.sign-up-form {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: var(--secondary-bg);
     width: 50%;
     padding: 100px;
-    padding-left: 150px;
+    padding-right: 200px;
 
     &__title {
         font-size: 20px;
@@ -18,13 +19,21 @@
         &__input {
             border: none;
             border-bottom: 1px solid black;
-            width: 300px;
+            width: 320px;
             height: 50px;
             padding-left: 10px;
             margin: 10px 0;
             font-size: 15px;
             outline: none;
             border-radius: 0;
+            background: none;
+        }
+
+        &__fullname {
+            &__input {
+                width: 150px;
+                margin-right: 10px;
+            }
         }
 
         &__btn {
@@ -44,15 +53,14 @@
     }
 }
 
-.sign-up-label {
+.sign-in-label {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    background-color: var(--secondary-bg);
     min-height: 50vh;
     padding: 100px;
-    padding-right: 150px;
+    padding-left: 200px;
 
     &__title {
         font-size: 20px;
@@ -109,15 +117,16 @@
         flex-direction: column;
     }
 
-    .sign-in-form {
+    .sign-up-form {
         width: auto;
         padding: 100px;
         padding-top: 20px;
     }
 
-    .sign-up-label {
+    .sign-in-label {
         width: auto;
         min-height: auto;
         padding: 100px;
+        padding-top: 20px;
     }
 }

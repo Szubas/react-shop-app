@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import './Sign-in-from.scss'
+import './Sign-in-form.scss'
 import { SavedSearch, Mail, Restore } from '@mui/icons-material';
 
 export const SignInForm = () => {

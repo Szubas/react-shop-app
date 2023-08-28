@@ -1,4 +1,4 @@
-import { SignInForm } from "../../components/Sign-in-form/Sign-in-from"
+import { SignInForm } from "../../components/Sign-in-form/Sign-in-form"
 
 export const SignIn = () => {
     const user = localStorage.getItem("user")
